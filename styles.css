@@ -274,6 +274,10 @@ footer {
         display: block;
     }
 
+    .Descripcion{
+        width: 100%;
+    }
+
     header ul{
         position: fixed;
         width: 100%;
@@ -305,7 +309,7 @@ footer {
     }
 
     .Padre_informacion{
-        padding-top: 300px;
+        padding-top: 350px;
         display: flex;
         justify-content: center;
     }
