@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    padding: 200px 0px;
+}
+
+main {
+    height: 1000px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgb(246, 242, 244);
+    height: 150px;
+    width: 100%;
+    top: 0;
+
+}
+
+
+
+h1 {
+    display: inline-block;
+}
+
+.brazo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav {
+    display: flex;
+    align-items: right;
+    text-align: right;
+    padding-top: 100px;
+    
+
+}
+
+#Titulo_Principal {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#Lista1  {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: black;
+    pointer-events: fill;
+}
+
+
+
+#img_card {
+    padding: 5px;
+    border-radius: 10px;
+    width: 320px;
+    height: 260px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.card .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+.informacion {
+    width: 500px;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.Padre_informacion{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.Yo{
+    height: 320px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+
+/*MENU*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: rgb(183, 174, 174);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*FORMULARIO*/
+
+/* ------------- Encabezado Contacto ------------- */
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+/* ------------- Formulario ------------- */
+  
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+   /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /*Añade select*/
+  .form-row input[type="text"],
+
+  .form-row input[type="email"],select {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+/*Estilos formulario*/
+.El_Formulario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+
+}
+/*Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header{
+        background-color: gray;
+    }
+
+    .checkbtn{
+        padding-bottom: 70px;
+        display: block;
+    }
+
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(170, 165, 165);
+        top:150px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+/*~ Significa que va a seleccionar todos los elementos UL que vienen despues*/
+    #check:checked ~ ul{
+        left: 0;
+       display: block; 
+    }
+
+    header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: black;
+    }
+
+    .Padre_informacion{
+        padding-top: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+}

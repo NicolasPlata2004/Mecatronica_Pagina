@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecatronica</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Linkear la imagen para cambiar el icono-->
+    <link rel="icon" type="image/png" href="img/Brazo.png">
+    <script src="Script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+             <div class="brazo">
+                <img src="img/Brazo.png" width="100px" height="100px">
+                <h1 id="Titulo_Principal">Mecatronica</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+                <ul id="Lista1">
+                    <li><a href="#Notas">Notas</a></li>
+                    <li><a href="#Libros">Libros</a></li>
+                    <li><a href="#Otros">Otros...</a></li>
+                </ul>  
+            </nav>  
+
+        </header>
+      
+    
+    <main>
+        <div class="cards"> 
+        <div class="card">
+            <div>
+                <center><img id="img_card" src="img/Estatica.jpg"></center>
+            </div>
+            <div class="content">
+                <h2>Principios de Estática (2016640)</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Laborum dolorem non 
+                    nobis eaque deserunt sequi perferendis 
+                    dignissimos recusandae, vero voluptatem 
+                    suscipit, obcaecati cum maxime odit 
+                    quidem fuga error consectetur tempore!
+                </p>
+            </div>
+            <div class="footer">
+                <span class="ver"><a>Ver mas...</a></span>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <center><img id="img_card" src="img/EDO.png"></center>
+            </div>
+            <div class="content">
+                <h2>Ecuaciones Diferenciales (1000007-B)</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Laborum dolorem non 
+                    nobis eaque deserunt sequi perferendis 
+                    dignissimos recusandae, vero voluptatem 
+                    suscipit, obcaecati cum maxime odit 
+                    quidem fuga error consectetur tempore!
+                </p>
+            </div>
+            <div class="footer">
+                <span><a>Ver mas...</a></span>
+            </div>
+        </div>  
+        <div class="card">
+
+            <div class="content">
+                <div>
+                    <center><img id="img_card" src="img/Fluidos.jpg"></center>
+                </div>
+                <h2>Fundamentos de Mecánica de Fluidos (1000021-B)</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Laborum dolorem non 
+                </p>
+            </div>
+
+            <div class="footer">
+                <span><a>Ver mas...</a></span>
+            </div>
+        </div>  
+        </div>
+    </main>
+
+    <footer>
+        <div class="Padre_informacion">
+            <div class="informacion">
+                <img class="Yo" src="img/Yo.jpeg">
+                <h3>Acerca de mí</h3>
+                <p>¡Bienvenido a mi primera página web! Mi nombre es Nicolás Plata, 
+                    estudiante de Ingeniería Mecatrónica. Me apasiona adquirir nuevos 
+                    conocimientos y a lo largo de mi carrera, iré compartiendo información 
+                    que vaya aprendiendo en este modesto sitio web.</p>
+            </div>
+        </div>
+
+        <img class="Descripcion" src="img/baner.png" width="100%">
+    </footer>
+<div class="El_Formulario">
+<h1>Apuntes</h1>
+      <p><em>¡Esperamos tu consulta!</em></p>
+
+      <form action="" method="get" class="formulario" id="form">
+
+        <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              
+              required
+            />
+            <!-- Con required solo ya manda alerta si el campo no es rellanado con un nombre -->
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="pais">Pais:</label>
+            <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="argentina">Colombia</option>
+                <option value="argentina">Ecuador</option>
+                <option value="argentina">Panama</option>
+                <option value="argentina">Chile</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+      </form>
+
+</div>
+    
+</body>
+</html>
